@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff1f5" />
+  <title>MOM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="login-screen" id="loginScreen">
+      <div class="login-card">
+        <div class="small-flower">🌷</div>
+        <p class="eyebrow">رسالة صغيرة لقلب كبير</p>
+        <h1>MY mom </h1>
+        <p class="login-hint">فيه مفاجأة مستنياكي… اكتبي كلمة السر عشان تفتحيها</p>
+        <form id="loginForm">
+          <label for="password">كلمة السر</label>
+          <input id="password" type="password" placeholder="اكتبي كلمة السر هنا" autocomplete="off" />
+          <p class="error" id="errorMsg" aria-live="polite"></p>
+          <button type="submit">Login</button>
+        </form>
+        <span class="tiny-note">تلميح: كلمة السر من 3 حروف بالإنجليزي</span>
+      </div>
+    </section>
+
+    <section class="intro-screen" id="introScreen" aria-hidden="true">
+      <div class="intro-text">كل الحب ليكي يا أمي</div>
+      <div id="flowerField"></div>
+    </section>
+
+    <section class="site-screen" id="siteScreen" aria-hidden="true">
+      <header class="hero">
+        <div class="hero-glow"></div>
+        <p class="eyebrow">إلى أجمل أم في الدنيا</p>
+        <h1>أمي… إنتِ الحكاية الحلوة كلها <span>❤️</span></h1>
+        <p class="hero-sub">فيه كلام كتير جوايا، بس مهما قلت مش هوفيكي حقك.</p>
+        <a class="scroll-link" href="#letter">انزلي واقري رسالتك ↓</a>
+      </header>
+
+
+      <section class="music-section" aria-label="أغنية لأمي">
+        <div class="music-card">
+          <div class="music-icon">🎵</div>
+          <div class="music-copy">
+            <p class="eyebrow">أغنية أهديها ليكي</p>
+            <h2>دي أغنيتك يا أمي</h2>
+            <p><b></b></p>
+          </div>
+          <audio controls preload="metadata">
+            <source src="assets/Albumaty.Com_Group_Omy_Thoma_Omy.mp3" type="audio/mpeg">
+            المتصفح لا يدعم تشغيل الصوت.
+          </audio>
+        </div>
+      </section>
+
+      <section class="content-section gallery-section" id="photos">
+        <div class="section-icon">📸</div>
+        <p class="eyebrow">أجمل الذكريات</p>
+        <h2>صور من أحلى لحظاتنا</h2>
+        <div class="photo-grid">
+          <figure class="photo-frame"><img src="assets/mom2.png" alt="" onerror="this.parentElement.classList.add('empty-photo'); this.style.display='none'"><figcaption>ذكرى جميلة ❤️</figcaption></figure>
+          <figure class="photo-frame"><img src="assets/mmm.png" alt="" onerror="this.parentElement.classList.add('empty-photo'); this.style.display='none'"><figcaption>أحلى وقت 🌷</figcaption></figure>
+          <figure class="photo-frame"><img src="assets/mom (2).png" alt="" onerror="this.parentElement.classList.add('empty-photo'); this.style.display='none'"><figcaption>دايمًا مع بعض 💗</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="content-section letter-section" id="letter">
+        <div class="section-icon">💌</div>
+        <p class="eyebrow">رسالة من القلب</p>
+        <h2>حبيبتي يا أمي</h2>
+        <div class="letter">
+          <p>يمكن مش دايمًا بعرف أقولك قد إيه أنا بحبك، ويمكن ساعات بقصّر أو ما بعرفش أعبّر… بس الحقيقة إن وجودك في حياتي هو أكبر نعمة.</p>
+          <p>شكرًا على كل مرة تعبتي عشاني، وعلى كل دعوة حلوة، وعلى خوفك وحنانك وصبرك. شكرًا إنك دايمًا بتكوني الأمان اللي برجعله مهما الدنيا تتغير.</p>
+          <p>ربنا يخليكي ليا، ويديكي الصحة وراحة البال، ويقدرني أفرّح قلبك زي ما فرّحتي حياتي. كل يوم وإنتِ أجمل نعمة وأغلى إنسانة.</p>
+          <p class="signature">بحبك قد الدنيا كلها… وكل سنة وإنتِ طيبة يا أمي ❤️</p>
+        </div>
+      </section>
+
+      <section class="content-section counter-section">
+        <div class="section-icon">⏳</div>
+        <p class="eyebrow">وقت وحب ملوش نهاية</p>
+        <h2>من 16 سنة ويومين… ولسه كل يوم بحبك أكتر</h2>
+        <p class="counter-caption">العداد بيزيد مع كل ثانية ❤️</p>
+        <div class="counter" id="counter">
+          <div class="counter-box"><strong id="years">16</strong><span>سنة</span></div>
+          <div class="counter-box"><strong id="days">2</strong><span>يوم</span></div>
+          <div class="counter-box"><strong id="hours">00</strong><span>ساعة</span></div>
+          <div class="counter-box"><strong id="minutes">00</strong><span>دقيقة</span></div>
+          <div class="counter-box"><strong id="seconds">00</strong><span>ثانية</span></div>
+        </div>
+      </section>
+<footer>
+        <div>🌹 🌷 🌹</div>
+        <p>ربنا يخليكي ليا يا أمي</p>
+        <small>اتعملت بكل الحب ❤️</small>
+      </footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
